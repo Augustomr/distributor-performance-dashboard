@@ -86,6 +86,6 @@ df = pd.DataFrame(data)
 # -----------------------
 # SALVAR -> Salvar o dataset gerado em um arquivo CSV
 # -----------------------
-df.to_csv("data/dataset.csv", index=False)
+df.to_csv("data/dataset.csv", sep=";", decimal=',', index=False)
 
 print(f"Dataset gerado com {len(df)} linhas, {NUM_DISTRIBUTORS} distribuidores, {len(CATEGORIES)} categorias e {len(dates)} datas.")

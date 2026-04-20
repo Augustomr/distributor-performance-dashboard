@@ -6,7 +6,7 @@ This project simulates a real-world scenario of distributor performance tracking
 
 The goal is to analyze how distributors perform against targets, identify bottlenecks, and evaluate reward distribution.
 
-The dataset is fully synthetic but designed to simulate a realistic business behavior.
+The dataset is fully synthetic but designed to simulate realistic business behavior.
 
 ---
 
@@ -25,9 +25,8 @@ This dashboard provides a clear and actionable view of these metrics.
 
 ## Project Structure
 
-```
+```text
 distributor-performance-dashboard/
-
 ├── dashboard/
 │   └── Analysis_Dashboard.pbix
 ├── data/
@@ -45,22 +44,22 @@ distributor-performance-dashboard/
 
 The dataset simulates:
 
-* 50–100 distributors (randomized)
-* Daily records for the entire year of 2025
+* 50-100 distributors (randomized)
+* Monthly records for the entire year of 2025
 * 7 product categories
 * Performance vs targets
 * Reward eligibility logic
 
 ### Main Fields
 
-* `Distributor` → Distributor name (synthetic)
-* `Grupo` → Distributor group (1–5)
-* `Categoria` → Product category
-* `Meta` → Target value
-* `Realizado` → Achieved value
-* `Premiacao` → Reward earned
-* `Cobertura` → Target achievement flag
-* `Data` → Daily date
+* `Distributor` -> Distributor name (synthetic)
+* `Grupo` -> Distributor group (1-5)
+* `Categoria` -> Product category
+* `Meta` -> Target value
+* `Realizado` -> Achieved value
+* `Premiacao` -> Reward earned
+* `Cobertura` -> Target achievement flag
+* `Data` -> Monthly date in `YYYY-MM`
 
 ---
 
@@ -77,6 +76,20 @@ To generate the dataset:
 ```bash
 python scripts/generate_data.py
 ```
+
+To reproduce the same dataset:
+
+```bash
+python scripts/generate_data.py --seed 42
+```
+
+Optional parameters:
+
+* `--min-distributors` and `--max-distributors` to control the distributor range
+* `--year` to change the reference year
+* `--output` to save the CSV to another location
+
+The script now uses only the Python standard library, so no external packages are required to generate the CSV.
 
 ---
 
@@ -104,7 +117,6 @@ The Power BI dashboard provides:
 ## Tools & Technologies
 
 * Python (data generation)
-* Pandas & NumPy (data generation)
 * Power BI (data visualization)
 
 ---
@@ -119,6 +131,6 @@ The Power BI dashboard provides:
 
 ## Author
 
-Augusto Rocha
-Data Analyst | Data Engineering
+Augusto Rocha  
+Data Analyst | Data Engineering  
 Focused on building scalable data solutions and business-driven analytics
