@@ -1,136 +1,117 @@
 # Distributor Performance Dashboard
 
-## Overview
+Projeto de portfólio voltado para análise de desempenho de distribuidores em uma campanha de incentivo comercial. O repositório reúne um gerador de dados sintéticos em Python, um dataset pronto para uso, um dashboard em Power BI e um relatório em PDF com a leitura dos resultados.
 
-This project simulates a real-world scenario of distributor performance tracking during a sales incentive campaign.
+## Objetivo
 
-The goal is to analyze how distributors perform against targets, identify bottlenecks, and evaluate reward distribution.
+Simular um cenário de negócio em que uma empresa precisa acompanhar:
 
-The dataset is fully synthetic but designed to simulate realistic business behavior.
+- quais distribuidores estão atingindo meta;
+- como a performance varia entre categorias;
+- como a premiação está sendo distribuída;
+- onde existem gaps de cobertura e oportunidade de crescimento.
 
----
+Os dados são fictícios, mas foram estruturados para parecerem próximos de um contexto real de acompanhamento comercial.
 
-## Business Problem
-
-Companies running incentive programs need to understand:
-
-* Which distributors are meeting targets
-* Where performance gaps exist
-* How rewards are being distributed
-* Which categories are underperforming
-
-This dashboard provides a clear and actionable view of these metrics.
-
----
-
-## Project Structure
+## Estrutura do projeto
 
 ```text
 distributor-performance-dashboard/
-├── dashboard/
-│   └── Analysis_Dashboard.pbix
-├── data/
-│   └── dataset.csv
-├── scripts/
-│   └── generate_data.py
-├── images/
-│   └── preview.png
-└── README.md
+|-- dashboard/
+|   `-- Analysis_Dashboard.pbix
+|-- data/
+|   `-- dataset.csv
+|-- report/
+|   `-- resultado_campanha.pdf
+|-- scripts/
+|   `-- generate_data.py
+`-- README.md
 ```
 
----
+## Arquivos principais
 
-## Dataset Description
+- `scripts/generate_data.py`: gera a base sintética usada no projeto.
+- `data/dataset.csv`: dataset consolidado já exportado.
+- `dashboard/Analysis_Dashboard.pbix`: dashboard analítico em Power BI.
+- `report/resultado_campanha.pdf`: relatório final com os principais resultados da campanha.
 
-The dataset simulates:
+## Dataset
 
-* 50-100 distributors (randomized)
-* Monthly records for the entire year of 2025
-* 7 product categories
-* Performance vs targets
-* Reward eligibility logic
+O arquivo `data/dataset.csv` está salvo com `;` como separador e `,` como decimal, padrão comum em ambientes PT-BR.
 
-### Main Fields
+Base atual do repositório:
 
-* `Distributor` -> Distributor name (synthetic)
-* `Grupo` -> Distributor group (1-5)
-* `Categoria` -> Product category
-* `Meta` -> Target value
-* `Realizado` -> Achieved value
-* `Premiacao` -> Reward earned
-* `Cobertura` -> Target achievement flag
-* `Data` -> Monthly date in `YYYY-MM`
+- 145.635 linhas
+- 13 colunas
+- 57 distribuidores únicos
+- 7 categorias
+- período de `2025-01-01` a `2025-12-31`
 
----
+### Campos disponíveis
 
-## Data Generation
+- `Distributor_ID`: identificador do distribuidor
+- `Distributor`: nome sintético do distribuidor
+- `Grupo`: grupo do distribuidor
+- `Categoria`: categoria de produto
+- `kpiType`: tipo do KPI analisado
+- `isFocusCategory`: indicador de categoria foco
+- `Meta`: meta definida para o período
+- `Realizado`: resultado realizado
+- `Data`: data de referência
+- `Premiacao`: valor de premiação concedido
+- `Cobertura`: flag de atingimento de meta
+- `Distributor_Num`: identificador numérico auxiliar
+- `Grupo_Label`: rótulo textual do grupo
 
-Data is generated using Python with controlled randomness to simulate:
+## Como gerar os dados
 
-* High and low performers
-* Near-target scenarios
-* Realistic distribution patterns
+O script atual usa `pandas`, `numpy`, `random` e `datetime`.
 
-To generate the dataset:
+### Pré-requisitos
+
+- Python 3.10+ recomendado
+- dependências instaladas no ambiente:
+
+```bash
+pip install pandas numpy
+```
+
+### Execução
 
 ```bash
 python scripts/generate_data.py
 ```
 
-To reproduce the same dataset:
-
-```bash
-python scripts/generate_data.py --seed 42
-```
-
-Optional parameters:
-
-* `--min-distributors` and `--max-distributors` to control the distributor range
-* `--year` to change the reference year
-* `--output` to save the CSV to another location
-
-The script now uses only the Python standard library, so no external packages are required to generate the CSV.
-
----
+Ao executar, o arquivo `data/dataset.csv` é sobrescrito com uma nova amostra sintética.
 
 ## Dashboard
 
-The Power BI dashboard provides:
+O arquivo `dashboard/Analysis_Dashboard.pbix` foi construído para apoiar leituras como:
 
-* Total performance overview
-* Reward distribution analysis
-* Conversion rates
-* Ranking of distributors
-* Category-level performance
-* Drop-off analysis
+- visão geral de performance;
+- atingimento de meta por distribuidor;
+- comparação por categoria;
+- análise de cobertura;
+- distribuição de premiação.
 
----
+## Relatório
 
-## Key Insights Example
+O arquivo `report/resultado_campanha.pdf` complementa o dashboard com uma narrativa executiva dos resultados observados na campanha.
 
-* Majority of distributors fail to reach volume targets
-* Significant portion is close to achieving goals
-* Reward distribution is concentrated among top performers
+## Tecnologias utilizadas
 
----
+- Python
+- pandas
+- numpy
+- Power BI
 
-## Tools & Technologies
+## Observações
 
-* Python (data generation)
-* Power BI (data visualization)
+- Todos os dados do projeto são fictícios.
+- O repositório foi desenvolvido com foco em portfólio de análise de dados.
+- Caso o script seja alterado, o conteúdo do dataset pode mudar em volume e distribuição.
 
----
-
-## Notes
-
-* All data is fictional
-* No real company or sensitive information is used
-* Project focused on portfolio demonstration
-
----
-
-## Author
+## Autor
 
 Augusto Rocha  
-Data Analyst | Data Engineering  
-Focused on building scalable data solutions and business-driven analytics
+Data Analyst | Data Engineering
