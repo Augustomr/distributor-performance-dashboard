@@ -5,7 +5,7 @@ import urllib.request
 
 import pandas as pd
 
-from generate_data import generate_dataset
+from generate_data import DEFAULT_DATASET_PATH, generate_dataset
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -444,7 +444,7 @@ if __name__ == "__main__":
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    raw_df = generate_dataset(save_csv=False)
+    raw_df = generate_dataset(save_csv=True)
     quote_info = get_usd_brl_quote()
     treated_df = prepare_dataset(raw_df, quote_info["cotacao"])
     kpis = build_kpis(treated_df)
@@ -454,6 +454,7 @@ if __name__ == "__main__":
     AI_PROMPT_PATH.write_text(build_ai_prompt(kpis, quote_info), encoding="utf-8")
 
     print("Pipeline concluida.")
+    print(f"Dataset original: {DEFAULT_DATASET_PATH}")
     print(f"Dataset tratado: {TREATED_DATASET_PATH}")
     print(f"Resumo de KPIs: {KPI_SUMMARY_PATH}")
     print(f"Prompt para IA: {AI_PROMPT_PATH}")

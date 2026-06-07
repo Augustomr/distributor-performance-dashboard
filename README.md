@@ -74,7 +74,7 @@ A pipeline foi criada para tratar os dados antes da análise, sem usar OpenAI AP
 
 Ela executa as seguintes etapas:
 
-1. Obtém os dados sintéticos chamando `generate_dataset(save_csv=False)`, sem gerar arquivo intermediário.
+1. Gera os dados sintéticos chamando `generate_dataset(save_csv=True)` e atualiza `data/dataset.csv`.
 2. Renomeia colunas para nomes mais amigáveis.
 3. Aplica uma regra de preço por categoria, considerando que o KPI original é volume/unidades.
 4. Consulta uma API pública para obter a cotação USD/BRL.
@@ -172,6 +172,7 @@ python scripts/pipeline.py
 
 Ao executar, são gerados:
 
+- `data/dataset.csv`
 - `data/dataset_tratado.csv`
 - `output/kpis_resumo.csv`
 - `output/ai_analysis_prompt.md`

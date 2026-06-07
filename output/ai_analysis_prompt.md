@@ -26,10 +26,10 @@ Gere a resposta com as seguintes secoes:
 
 Os dados representam uma campanha comercial ficticia de distribuidores. O KPI principal e volume em unidades. Os valores financeiros foram derivados por categoria usando uma regra de preco em dolar por unidade e convertidos para real com a cotacao USD/BRL abaixo.
 
-- Prompt gerado em: 2026-06-07 13:57:38
+- Prompt gerado em: 2026-06-07 14:11:51
 - Periodo analisado: 2025-01-01 a 2025-12-31
-- Linhas analisadas: 168.630
-- Distribuidores: 66
+- Linhas analisadas: 173.740
+- Distribuidores: 68
 - Categorias: 7
 - Cotacao USD/BRL usada: R$ 5,1671
 - Fonte da cotacao: https://economia.awesomeapi.com.br/json/last/USD-BRL
@@ -49,69 +49,69 @@ Os dados representam uma campanha comercial ficticia de distribuidores. O KPI pr
 
 ## KPIs gerais
 
-- Meta total em unidades: 92.656.244,00
-- Realizado total em unidades: 92.895.157,10
-- Atingimento total: 100,26%
-- Diferenca total em unidades: 238.913,10
-- Valor meta em dolar: US$ 436.688.223,50
-- Valor realizado em dolar: US$ 437.803.686,25
-- Valor meta em real: R$ 2.256.411.712,30
-- Valor realizado em real: R$ 2.262.175.423,72
-- Diferenca de valor em real: R$ 5.763.711,42
-- Cobertura media de meta: 48,54%
-- Premiacao total: R$ 81.858.000,00
+- Meta total em unidades: 95.449.378,00
+- Realizado total em unidades: 92.299.680,82
+- Atingimento total: 96,70%
+- Diferenca total em unidades: -3.149.697,18
+- Valor meta em dolar: US$ 449.797.794,50
+- Valor realizado em dolar: US$ 435.250.629,89
+- Valor meta em real: R$ 2.324.150.175,95
+- Valor realizado em real: R$ 2.248.983.526,60
+- Diferenca de valor em real: R$ -75.166.649,35
+- Cobertura media de meta: 46,45%
+- Premiacao total: R$ 80.701.000,00
 
 ## Desempenho por categoria
 
 | categoria | meta_unidades | realizado_unidades | atingimento_percentual | valor_realizado_usd | valor_realizado_brl | cobertura_percentual | premiacao_brl |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| CAFÉ | 13.213.870,00 | 13.232.098,49 | 100,14% | US$ 105.856.787,92 | R$ 546.972.608,67 | 48,48% | R$ 11.679.000,00 |
-| CHOCOLATE | 13.239.168,00 | 13.284.002,82 | 100,34% | US$ 92.988.019,74 | R$ 480.478.396,77 | 48,65% | R$ 11.719.000,00 |
-| CEREAL | 13.242.798,00 | 13.284.846,91 | 100,32% | US$ 66.424.234,55 | R$ 343.220.662,87 | 48,48% | R$ 11.679.000,00 |
-| LEITE | 13.194.915,00 | 13.233.505,82 | 100,29% | US$ 52.934.023,28 | R$ 273.515.391,51 | 48,54% | R$ 11.693.000,00 |
-| CREME DE LEITE | 13.277.346,00 | 13.305.297,97 | 100,21% | US$ 46.568.542,70 | R$ 240.624.318,67 | 48,73% | R$ 11.738.000,00 |
-| OUTROS | 13.236.718,00 | 13.287.128,69 | 100,38% | US$ 39.861.386,07 | R$ 205.967.768,02 | 48,46% | R$ 11.674.000,00 |
-| AÇÚCAR | 13.251.429,00 | 13.268.276,40 | 100,13% | US$ 33.170.691,99 | R$ 171.396.277,21 | 48,47% | R$ 11.676.000,00 |
+| CAFÉ | 13.563.251,00 | 13.162.482,67 | 97,05% | US$ 105.299.861,36 | R$ 544.094.912,94 | 46,60% | R$ 11.567.000,00 |
+| CHOCOLATE | 13.671.932,00 | 13.243.364,21 | 96,87% | US$ 92.703.549,47 | R$ 479.008.511,04 | 46,54% | R$ 11.551.000,00 |
+| CEREAL | 13.697.226,00 | 13.230.047,72 | 96,59% | US$ 66.150.238,60 | R$ 341.804.898,33 | 46,20% | R$ 11.468.000,00 |
+| LEITE | 13.577.057,00 | 13.124.814,51 | 96,67% | US$ 52.499.258,04 | R$ 271.268.916,43 | 46,54% | R$ 11.550.000,00 |
+| CREME DE LEITE | 13.632.080,00 | 13.184.783,14 | 96,72% | US$ 46.146.740,59 | R$ 238.444.824,80 | 46,61% | R$ 11.569.000,00 |
+| OUTROS | 13.624.089,00 | 13.131.018,73 | 96,38% | US$ 39.393.056,19 | R$ 203.547.861,08 | 46,41% | R$ 11.518.000,00 |
+| AÇÚCAR | 13.683.743,00 | 13.223.169,84 | 96,63% | US$ 33.057.925,64 | R$ 170.813.601,98 | 46,24% | R$ 11.478.000,00 |
 
 ## Desempenho por grupo
 
 | grupo_label | meta_unidades | realizado_unidades | atingimento_percentual | valor_realizado_brl | cobertura_percentual | premiacao_brl |
 | --- | --- | --- | --- | --- | --- | --- |
-| Grupo 2 | 28.095.185,00 | 29.643.295,23 | 105,51% | R$ 722.563.519,40 | 53,95% | R$ 27.571.000,00 |
-| Grupo 4 | 22.397.324,00 | 21.570.641,73 | 96,31% | R$ 524.513.244,12 | 44,18% | R$ 18.061.000,00 |
-| Grupo 5 | 14.098.898,00 | 14.219.811,64 | 100,86% | R$ 345.825.468,12 | 51,87% | R$ 13.254.000,00 |
-| Grupo 3 | 15.460.378,00 | 13.942.455,79 | 90,18% | R$ 339.535.571,72 | 39,40% | R$ 11.073.000,00 |
-| Grupo 1 | 12.604.459,00 | 13.518.952,71 | 107,26% | R$ 329.737.620,36 | 51,75% | R$ 11.899.000,00 |
+| Grupo 1 | 26.595.759,00 | 26.889.519,44 | 101,10% | R$ 655.160.775,89 | 54,07% | R$ 26.247.000,00 |
+| Grupo 4 | 21.063.449,00 | 20.653.635,29 | 98,05% | R$ 503.392.860,33 | 46,71% | R$ 17.901.000,00 |
+| Grupo 2 | 16.892.018,00 | 15.368.449,51 | 90,98% | R$ 374.378.880,93 | 38,13% | R$ 11.690.000,00 |
+| Grupo 5 | 15.488.477,00 | 15.182.617,20 | 98,03% | R$ 370.066.160,22 | 51,39% | R$ 14.442.000,00 |
+| Grupo 3 | 15.409.675,00 | 14.205.459,38 | 92,19% | R$ 345.984.849,23 | 37,08% | R$ 10.421.000,00 |
 
 ## Top 10 distribuidores por valor realizado em real
 
 | distribuidor | grupo_label | realizado_unidades | atingimento_percentual | valor_realizado_brl | cobertura_percentual | premiacao_brl |
 | --- | --- | --- | --- | --- | --- | --- |
-| Loja Fort | Grupo 1 | 2.490.946,03 | 175,77% | R$ 60.768.999,41 | 100,00% | R$ 2.555.000,00 |
-| Empório Express | Grupo 2 | 2.346.284,02 | 165,93% | R$ 57.004.467,41 | 99,96% | R$ 2.554.000,00 |
-| Armazém Aliança | Grupo 3 | 2.248.695,21 | 161,10% | R$ 54.567.035,17 | 99,88% | R$ 2.552.000,00 |
-| Mercado Fort | Grupo 2 | 2.220.948,58 | 156,58% | R$ 54.080.005,10 | 99,84% | R$ 2.551.000,00 |
-| Loja Aliança | Grupo 2 | 2.076.727,68 | 148,08% | R$ 50.747.611,68 | 99,26% | R$ 2.536.000,00 |
-| Loja Prime | Grupo 1 | 2.052.917,54 | 146,34% | R$ 50.122.729,49 | 98,94% | R$ 2.528.000,00 |
-| Distribuidora Alabama | Grupo 4 | 2.001.291,60 | 142,18% | R$ 48.868.158,76 | 98,24% | R$ 2.510.000,00 |
-| Armazém Alabama | Grupo 4 | 1.995.804,67 | 143,38% | R$ 48.633.126,93 | 98,79% | R$ 2.524.000,00 |
-| Mercado Prime | Grupo 1 | 1.903.296,33 | 133,76% | R$ 46.564.733,93 | 95,97% | R$ 2.452.000,00 |
-| Empório São José | Grupo 4 | 1.892.132,00 | 135,70% | R$ 45.976.608,87 | 96,32% | R$ 2.461.000,00 |
+| Atacadão Fort | Grupo 1 | 2.333.338,66 | 167,49% | R$ 56.880.484,75 | 99,96% | R$ 2.554.000,00 |
+| Loja Alabama | Grupo 4 | 2.277.004,60 | 162,93% | R$ 55.819.335,13 | 99,88% | R$ 2.552.000,00 |
+| Distribuidora Nova Era | Grupo 2 | 2.184.839,20 | 157,90% | R$ 53.063.240,88 | 99,88% | R$ 2.552.000,00 |
+| Atacadão Prime | Grupo 5 | 1.984.701,13 | 138,84% | R$ 48.288.882,83 | 97,61% | R$ 2.494.000,00 |
+| Armazém Aliança | Grupo 2 | 1.921.906,83 | 134,75% | R$ 47.052.749,04 | 95,97% | R$ 2.452.000,00 |
+| Distribuidora São José | Grupo 1 | 1.918.614,09 | 135,24% | R$ 46.846.422,37 | 96,44% | R$ 2.464.000,00 |
+| Distribuidora Fort | Grupo 1 | 1.916.825,09 | 137,32% | R$ 46.796.139,53 | 97,03% | R$ 2.479.000,00 |
+| Atacadão Aliança | Grupo 1 | 1.915.179,81 | 139,19% | R$ 46.610.908,06 | 97,61% | R$ 2.494.000,00 |
+| Supermercado Prime | Grupo 4 | 1.889.829,52 | 136,40% | R$ 46.315.730,35 | 96,44% | R$ 2.464.000,00 |
+| Loja Brasil | Grupo 1 | 1.882.247,34 | 134,86% | R$ 45.928.137,03 | 96,28% | R$ 2.460.000,00 |
 
 ## 10 distribuidores com maior ponto de atencao por atingimento
 
 | distribuidor | grupo_label | realizado_unidades | atingimento_percentual | valor_realizado_brl | cobertura_percentual | premiacao_brl |
 | --- | --- | --- | --- | --- | --- | --- |
-| Armazém Prime | Grupo 3 | 519.717,22 | 37,07% | R$ 12.493.176,94 | 0,20% | R$ 5.000,00 |
-| Atacadão Nova Era | Grupo 3 | 731.541,04 | 52,18% | R$ 17.801.816,83 | 0,98% | R$ 25.000,00 |
-| Loja Alabama | Grupo 4 | 751.359,17 | 53,30% | R$ 18.347.673,19 | 0,82% | R$ 21.000,00 |
-| Mercado Central | Grupo 1 | 788.284,41 | 56,05% | R$ 19.348.801,00 | 1,49% | R$ 38.000,00 |
-| Supermercado Prime | Grupo 4 | 880.794,94 | 63,27% | R$ 21.451.570,49 | 3,56% | R$ 91.000,00 |
-| Empório Alabama | Grupo 3 | 919.223,71 | 64,44% | R$ 22.433.807,24 | 3,25% | R$ 83.000,00 |
-| Comercial Express | Grupo 4 | 900.057,36 | 65,09% | R$ 21.893.881,01 | 3,48% | R$ 89.000,00 |
-| Empório Central | Grupo 2 | 916.505,89 | 65,36% | R$ 22.355.066,65 | 4,54% | R$ 116.000,00 |
-| Armazém Express | Grupo 2 | 911.024,57 | 65,63% | R$ 22.318.211,23 | 4,23% | R$ 108.000,00 |
-| Supermercado Nova Era | Grupo 2 | 919.279,43 | 66,23% | R$ 22.462.579,49 | 5,24% | R$ 134.000,00 |
+| Loja Prime | Grupo 2 | 263.351,06 | 18,91% | R$ 6.397.536,39 | 0,00% | R$ 0,00 |
+| Mercado Nova Era | Grupo 1 | 433.948,12 | 31,32% | R$ 10.569.690,34 | 0,04% | R$ 1.000,00 |
+| Atacadão Express | Grupo 5 | 447.111,67 | 31,77% | R$ 10.966.393,43 | 0,00% | R$ 0,00 |
+| Empório Nova Era | Grupo 1 | 483.606,94 | 34,58% | R$ 11.836.184,75 | 0,00% | R$ 0,00 |
+| Empório São José | Grupo 1 | 669.308,99 | 48,15% | R$ 16.369.195,32 | 0,47% | R$ 12.000,00 |
+| Atacadão Nova Era | Grupo 4 | 747.158,58 | 53,52% | R$ 18.218.911,85 | 0,74% | R$ 19.000,00 |
+| Armazém Fort | Grupo 4 | 826.175,47 | 57,99% | R$ 20.156.118,72 | 1,41% | R$ 36.000,00 |
+| Armazém Alabama | Grupo 4 | 867.471,38 | 61,71% | R$ 21.054.496,97 | 3,33% | R$ 85.000,00 |
+| Atacadão Central | Grupo 2 | 878.868,03 | 62,07% | R$ 21.408.702,26 | 2,54% | R$ 65.000,00 |
+| Distribuidora Alabama | Grupo 3 | 932.120,92 | 66,23% | R$ 22.569.236,04 | 4,23% | R$ 108.000,00 |
 
 ## Tarefa
 
