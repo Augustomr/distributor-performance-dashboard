@@ -1,0 +1,33 @@
+secao;categoria;meta_unidades;realizado_unidades;valor_realizado_usd;valor_realizado_brl;cobertura_percentual;premiacao_brl;atingimento_percentual;grupo_label;id_distribuidor;distribuidor
+category_summary;CAFÉ;13213870;13232098,49;105856787,92;546972608,67;48,48;11679000;100,14;;;
+category_summary;CHOCOLATE;13239168;13284002,82;92988019,74;480478396,77;48,65;11719000;100,34;;;
+category_summary;CEREAL;13242798;13284846,91;66424234,55;343220662,87;48,48;11679000;100,32;;;
+category_summary;LEITE;13194915;13233505,82;52934023,28;273515391,51;48,54;11693000;100,29;;;
+category_summary;CREME DE LEITE;13277346;13305297,97;46568542,7;240624318,67;48,73;11738000;100,21;;;
+category_summary;OUTROS;13236718;13287128,69;39861386,07;205967768,02;48,46;11674000;100,38;;;
+category_summary;AÇÚCAR;13251429;13268276,4;33170691,99;171396277,21;48,47;11676000;100,13;;;
+group_summary;;28095185;29643295,23;;722563519,4;53,95;27571000;105,51;Grupo 2;;
+group_summary;;22397324;21570641,73;;524513244,12;44,18;18061000;96,31;Grupo 4;;
+group_summary;;14098898;14219811,64;;345825468,12;51,87;13254000;100,86;Grupo 5;;
+group_summary;;15460378;13942455,79;;339535571,72;39,4;11073000;90,18;Grupo 3;;
+group_summary;;12604459;13518952,71;;329737620,36;51,75;11899000;107,26;Grupo 1;;
+top_distributors;;1417178;2490946,03;;60768999,41;100,0;2555000;175,77;Grupo 1;53,0;Loja Fort
+top_distributors;;1413988;2346284,02;;57004467,41;99,96;2554000;165,93;Grupo 2;62,0;Empório Express
+top_distributors;;1395845;2248695,21;;54567035,17;99,88;2552000;161,1;Grupo 3;14,0;Armazém Aliança
+top_distributors;;1418415;2220948,58;;54080005,1;99,84;2551000;156,58;Grupo 2;43,0;Mercado Fort
+top_distributors;;1402448;2076727,68;;50747611,68;99,26;2536000;148,08;Grupo 2;47,0;Loja Aliança
+top_distributors;;1402859;2052917,54;;50122729,49;98,94;2528000;146,34;Grupo 1;35,0;Loja Prime
+top_distributors;;1407583;2001291,6;;48868158,76;98,24;2510000;142,18;Grupo 4;52,0;Distribuidora Alabama
+top_distributors;;1391985;1995804,67;;48633126,93;98,79;2524000;143,38;Grupo 4;7,0;Armazém Alabama
+top_distributors;;1422914;1903296,33;;46564733,93;95,97;2452000;133,76;Grupo 1;45,0;Mercado Prime
+top_distributors;;1394312;1892132,0;;45976608,87;96,32;2461000;135,7;Grupo 4;18,0;Empório São José
+attention_distributors;;1402048;519717,22;;12493176,94;0,2;5000;37,07;Grupo 3;28,0;Armazém Prime
+attention_distributors;;1401829;731541,04;;17801816,83;0,98;25000;52,18;Grupo 3;22,0;Atacadão Nova Era
+attention_distributors;;1409667;751359,17;;18347673,19;0,82;21000;53,3;Grupo 4;41,0;Loja Alabama
+attention_distributors;;1406375;788284,41;;19348801,0;1,49;38000;56,05;Grupo 1;59,0;Mercado Central
+attention_distributors;;1392130;880794,94;;21451570,49;3,56;91000;63,27;Grupo 4;19,0;Supermercado Prime
+attention_distributors;;1426440;919223,71;;22433807,24;3,25;83000;64,44;Grupo 3;29,0;Empório Alabama
+attention_distributors;;1382713;900057,36;;21893881,01;3,48;89000;65,09;Grupo 4;11,0;Comercial Express
+attention_distributors;;1402167;916505,89;;22355066,65;4,54;116000;65,36;Grupo 2;36,0;Empório Central
+attention_distributors;;1388117;911024,57;;22318211,23;4,23;108000;65,63;Grupo 2;24,0;Armazém Express
+attention_distributors;;1388114;919279,43;;22462579,49;5,24;134000;66,23;Grupo 2;15,0;Supermercado Nova Era
